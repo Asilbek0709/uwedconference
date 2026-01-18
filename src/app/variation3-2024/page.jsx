@@ -2,10 +2,11 @@
 
 import Header from "../components/Header"
 import Footer from "../components/Footer"
+import { useTranslation } from "react-i18next"
 
 export default function Variation3_2024(){
 
-
+    const { t } = useTranslation()
 
     return(
         <section className="variation3-2024">
