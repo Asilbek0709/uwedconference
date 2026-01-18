@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
   font-family: "Open Sans", sans-serif;
+  box-sizing: border-box;
 }
 
 body {
@@ -153,7 +154,7 @@ header img {
   right: 40px;
 }
 
-/* Changed from height: 100% to height: auto for footer */
+/* Changed footer height from 100% to auto for proper content flow */
 footer {
   display: flex;
   background-color: #000;
@@ -227,7 +228,7 @@ footer {
   color: #6e0691;
 }
 
-/* Removed fixed height, added max-height with fallback */
+/* Changed marquee from fixed height to min/max height for flexibility */
 .marquee {
   position: relative;
   width: 100%;
@@ -237,6 +238,7 @@ footer {
   border-radius: 16px;
   cursor: pointer;
   margin-top: 4rem;
+  margin-left: 0;
 }
 
 .marquee-bg-text {
@@ -321,7 +323,7 @@ footer {
   }
 }
 
-/* Removed fixed height: 120vh, added proper padding/margins for mobile */
+/* Removed fixed height: 120vh, added proper padding/margins for desktop */
 .latest-conference {
   display: flex;
   justify-content: center;
@@ -332,6 +334,7 @@ footer {
   margin-bottom: 2rem;
   position: relative;
   z-index: 1;
+  height: auto;
 }
 
 .latest-conference img {
@@ -622,7 +625,7 @@ footer {
   right: 0;
 }
 
-/* Mobile media query: removed height: 120vh, added proper margins and padding for section spacing */
+/* Mobile breakpoint: ≤480px with proper spacing and no fixed heights */
 @media (max-width: 480px) {
   .burger {
     display: flex;
@@ -646,7 +649,6 @@ footer {
     font-size: 1.5rem;
   }
 
-  /* Fixed: removed height: 120vh, added auto height with proper spacing */
   .latest-conference {
     display: flex;
     flex-direction: column;
@@ -669,7 +671,6 @@ footer {
     font-size: 18px;
   }
 
-  /* Fixed: added proper spacing between conference sections */
   .conferences {
     display: flex;
     flex-direction: column;
@@ -678,7 +679,6 @@ footer {
     margin: 2rem 0;
     padding: 1rem;
     gap: 1rem;
-    left: 0;
   }
 
   .conference-info {
@@ -688,6 +688,10 @@ footer {
     min-width: auto;
     width: 100%;
     margin-bottom: 1rem;
+  }
+
+  .conferences img {
+    width: 100%;
   }
 
   .conference-hover-link {
@@ -704,11 +708,12 @@ footer {
     max-width: 100%;
   }
 
-  /* Fixed: added margin-top to push footer down, ensure it's not covered */
   footer {
     display: flex;
     flex-direction: column;
+    padding: 1.5rem;
     margin: 0;
+    width: 100%;
     height: auto;
     position: relative;
     z-index: 5;
@@ -722,15 +727,267 @@ footer {
     margin-top: 1rem;
   }
 
-  /* Fixed: adjust marquee for mobile */
   .marquee {
     height: 10rem;
     margin-top: 2rem;
-    margin-left: 1rem;
     margin-right: 1rem;
   }
 
   .marquee-bg-text span {
     font-size: 48px;
   }
+
+  .location {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .location-info {
+    padding: 1rem;
+    width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+  }
+
+  .location-adress iframe {
+    width: 100%;
+    height: 20rem;
+  }
+
+  .articles-container {
+    max-width: 100%;
+    padding: 1rem;
+  }
+
+  .article-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .article-card h1 {
+    max-width: 100%;
+  }
+
+  .article-navigation,
+  .buttons {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .conf-page-img {
+    flex-direction: column;
+    padding: 1rem;
+    gap: 1rem;
+  }
+
+  .articles-sections {
+    max-width: 100%;
+  }
+
+  .article-card {
+    padding: 1rem;
+  }
+
+  .buttons a {
+    padding: 0.5rem 1rem;
+    font-size: 12px;
+  }
+}
+
+/* Tablet breakpoint: 481px - 768px */
+@media (min-width: 481px) and (max-width: 768px) {
+  .burger {
+    display: flex;
+  }
+
+  .header-navigation {
+    display: none;
+  }
+
+  .slide {
+    height: 60vh;
+  }
+
+  .overlay h1 {
+    font-size: 2rem;
+  }
+
+  .latest-conference {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    height: auto;
+  }
+
+  .latest-conference img {
+    width: 100%;
+  }
+
+  .latest-conference-info {
+    max-width: 100%;
+  }
+
+  .conferences {
+    flex-direction: column;
+    padding: 1.5rem;
+    gap: 1.5rem;
+    margin: 2rem 0;
+  }
+
+  .conference-info {
+    flex-direction: column;
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .conferences img {
+    width: 100%;
+  }
+
+  .marquee {
+    height: 12rem;
+    margin: 2rem 1rem;
+  }
+
+  .marquee-bg-text span {
+    font-size: 72px;
+  }
+
+  header {
+    padding: 1rem;
+  }
+
+  footer {
+    flex-direction: column;
+    padding: 2rem 1.5rem;
+    margin-top: 2rem;
+  }
+
+  .location {
+    flex-direction: column;
+    padding: 1.5rem;
+  }
+
+  .location-info {
+    width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+  }
+
+  .location-adress iframe {
+    width: 100%;
+    height: 25rem;
+  }
+
+  .articles-container {
+    max-width: 95%;
+    padding: 1.5rem;
+  }
+
+  .article-card {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1.5rem;
+  }
+
+  .article-card h1 {
+    max-width: 100%;
+  }
+
+  .conf-page-img {
+    padding: 1.5rem;
+    gap: 1.5rem;
+  }
+
+  .conf-page-img img {
+    max-width: 100%;
+  }
+
+  .articles-sections {
+    max-width: 100%;
+  }
+}
+
+/* Desktop breakpoint: 769px - 1200px */
+@media (min-width: 769px) and (max-width: 1200px) {
+  .slide {
+    height: 70vh;
+  }
+
+  .overlay h1 {
+    font-size: 2.5rem;
+  }
+
+  .latest-conference {
+    padding: 2rem 2rem;
+    gap: 1.5rem;
+    margin-top: 3rem;
+  }
+
+  .latest-conference img {
+    width: 25rem;
+  }
+
+  .conferences {
+    gap: 2rem;
+    padding: 1.5rem;
+    margin: 2rem 0;
+  }
+
+  .conference-info {
+    min-width: 300px;
+    padding: 1rem;
+  }
+
+  .conferences img {
+    width: 12rem;
+  }
+
+  .marquee {
+    height: 16rem;
+    margin: 3rem 2rem;
+  }
+
+  .marquee-bg-text span {
+    font-size: 100px;
+  }
+
+  header {
+    padding: 1rem 2rem;
+  }
+
+  footer {
+    padding: 2rem 3rem;
+    margin-top: 2rem;
+  }
+
+  .location {
+    padding: 1.5rem 2rem;
+  }
+
+  .location-adress iframe {
+    width: 40rem;
+    height: 28rem;
+  }
+
+  .articles-container {
+    max-width: 85%;
+  }
+
+  .conf-page-img {
+    padding: 2rem 3rem;
+    gap: 1.5rem;
+  }
+
+  .articles-sections {
+    max-width: 85%;
+  }
+}
+
+/* Large screen breakpoint: >1200px (desktop default styles) */
+@media (min-width: 1201px) {
+  /* Desktop defaults apply - no additional changes needed */
 }
