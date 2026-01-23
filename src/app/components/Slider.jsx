@@ -35,63 +35,63 @@ export default function Slider() {
             className="heroSwiper"
         >
             <SwiperSlide>
-                <div className="slide" style={{ backgroundImage: "url('/1.jpg')"}}>
+                <div className="slide" style={{ backgroundImage: "url('/1.JPG')"}}>
                     <div className="overlay">
                         <Link className='hover-link' href={'/conference-variation'}></Link>             
                     </div>
                 </div>
             </SwiperSlide>
                 <SwiperSlide>
-                <div className="slide" style={{ backgroundImage: "url('/2.jpg')"}}>
+                <div className="slide" style={{ backgroundImage: "url('/2.JPG')"}}>
                     <div className="overlay" >
                         <Link className='hover-link' href={'/conference-variation'}></Link>             
                     </div>
                 </div>
             </SwiperSlide>
             <SwiperSlide>
-                <div className="slide" style={{ backgroundImage: "url('/3.jpg')"}}>
+                <div className="slide" style={{ backgroundImage: "url('/3.JPG')"}}>
                     <div className="overlay">
                         <Link className='hover-link' href={'/conference-variation'}></Link>             
                     </div>
                 </div>
             </SwiperSlide>
             <SwiperSlide>
-                <div className="slide" style={{ backgroundImage: "url('/4.jpg')"}}>
+                <div className="slide" style={{ backgroundImage: "url('/4.JPG')"}}>
                     <div className="overlay">
                         <Link className='hover-link' href={'/conference-variation'}></Link>             
                     </div>
                 </div>
             </SwiperSlide>
             <SwiperSlide>
-                <div className="slide" style={{ backgroundImage: "url('/5.jpg')"}}>
+                <div className="slide" style={{ backgroundImage: "url('/5.JPG')"}}>
                     <div className="overlay">
                         <Link className='hover-link' href={'/conference-variation'}></Link>             
                     </div>
                 </div>
             </SwiperSlide>
             <SwiperSlide>
-                <div className="slide" style={{ backgroundImage: "url('/6.jpg')"}}>
+                <div className="slide" style={{ backgroundImage: "url('/6.JPG')"}}>
                     <div className="overlay">
                         <Link className='hover-link' href={'/conference-variation'}></Link>             
                     </div>
                 </div>
             </SwiperSlide>
             <SwiperSlide>
-                <div className="slide" style={{ backgroundImage: "url('/7.jpg')"}}>
+                <div className="slide" style={{ backgroundImage: "url('/7.JPG')"}}>
                     <div className="overlay">
                         <Link className='hover-link' href={'/conference-variation'}></Link>             
                     </div>
                 </div>
             </SwiperSlide>
             <SwiperSlide>
-                <div className="slide" style={{ backgroundImage: "url('/8.jpg')"}}>
+                <div className="slide" style={{ backgroundImage: "url('/8.JPG')"}}>
                     <div className="overlay">
                         <Link className='hover-link' href={'/conference-variation'}></Link>             
                     </div>
                 </div>
             </SwiperSlide>
             <SwiperSlide>
-                <div className="slide" style={{ backgroundImage: "url('/9.jpg')"}}>
+                <div className="slide" style={{ backgroundImage: "url('/9.JPG')"}}>
                     <div className="overlay">
                         <Link className='hover-link' href={'/conference-variation'}></Link>             
                     </div>
@@ -99,7 +99,42 @@ export default function Slider() {
             </SwiperSlide>
 
             <SwiperSlide>
-                <div className="slide" style={{ backgroundImage: "url('/11.jpg')"}}>
+                <div className="slide" style={{ backgroundImage: "url('/11.JPG')"}}>
+                    <div className="overlay">
+                        <Link className='hover-link' href={'/conference-variation'}></Link>             
+                    </div>
+                </div>
+            </SwiperSlide>
+            <SwiperSlide>
+                <div className="slide" style={{ backgroundImage: "url('/12.JPG')"}}>
+                    <div className="overlay">
+                        <Link className='hover-link' href={'/conference-variation'}></Link>             
+                    </div>
+                </div>
+            </SwiperSlide>
+            <SwiperSlide>
+                <div className="slide" style={{ backgroundImage: "url('/13.JPG')"}}>
+                    <div className="overlay">
+                        <Link className='hover-link' href={'/conference-variation'}></Link>             
+                    </div>
+                </div>
+            </SwiperSlide>
+            <SwiperSlide>
+                <div className="slide" style={{ backgroundImage: "url('/14.JPG')"}}>
+                    <div className="overlay">
+                        <Link className='hover-link' href={'/conference-variation'}></Link>             
+                    </div>
+                </div>
+            </SwiperSlide>
+            <SwiperSlide>
+                <div className="slide" style={{ backgroundImage: "url('/15.JPG')"}}>
+                    <div className="overlay">
+                        <Link className='hover-link' href={'/conference-variation'}></Link>             
+                    </div>
+                </div>
+            </SwiperSlide>
+            <SwiperSlide>
+                <div className="slide" style={{ backgroundImage: "url('/16.JPG')"}}>
                     <div className="overlay">
                         <Link className='hover-link' href={'/conference-variation'}></Link>             
                     </div>

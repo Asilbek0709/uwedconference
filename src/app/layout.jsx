@@ -8,6 +8,10 @@ const openSans = Open_Sans({
   display: 'swap',
 })
 
+export const metadata = {
+  title: "INNOVATIONS IN FOREIGN LANGUAGE TEACHING IN THE ERA OF GLOBALIZATION AND SUSTAINABLE DEVELOPMENT",
+};
+
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={openSans.className}>
